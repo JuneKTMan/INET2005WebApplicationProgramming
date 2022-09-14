@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <meta charset="=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!------------------------------CSS------------------------------------->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/resue.css">
+
+     <!------------------------------Timer JS------------------------------------->
+     <script src=""></script>
+
+    <title> June's Field Experience</title>
+</head>
+<!-------------------------Header and Nav ------------------------------------>
+
+<body>
+    
+    <header>
+        <nav class="horizontal_nav_bar">
+
+                <ul>
+                    <li class="nav-label">
+                        <a href="index.html" class="">Home</a>
+                    </li>
+                    <li class="nav-label">
+                        <a href="work_details.html" class="">Work Term Details</a>
+                    </li>
+                    <li class="nav-label">
+                        <a href="what_have_I_learn.html" class="">What have I learn</a>
+                    </li>
+                    <li class="nav-label">
+                        <a href="feedback.html" class="">Feedback</a>
+                    </li>
+                </ul>
+           
+        </nav>
+
+            <img src="assets/img/workterm_banner_unsplash.jpg" id="bannerImg" alt="" />
+            <h1>  </h1>
+            <div id="currentTime"><span>localDay</span><span>localTime</span></div>
+    </header>
+
+    <!----------------------------Main------------------------------------->
+    <main class="main">
+        <!------------------------HOME------------------------------------------>
+        <section>
+            <div>
+            <article>
+                <h1 class="home-title">Feedback to my work-term experience</h1>
+        <form>
+            <div class="formRow">
+                <label for="name">Name*</label>
+                <input name="visitorName" id="nameBox" type="text" placeholder="First and Last Name">
+             </div>
+             <div class="formRow">
+                <label for="phone">Phone*</label>
+                <input name="visitorPhone" id="phoneBox" type="tel" placeholder="(nnn) nnn-nnnn"
+                   pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$">
+             </div>
+             <div>
+                <p>NSCC student?</p>
+                <input name="visitorType" id="nscc_student_yes" type="radio" checked>
+                <label for="nscc_student">Yes</label>
+                <input name="visitorType" id="nscc_student_no" type="radio">
+                <label for="nscc_student_no">No</label>
+             </div>
+             <fieldset id="feedback_message">
+                <legend>Your feedback</legend>
+                <textarea name="feedbackMessage" id="messageBox" cols="100%" rows="7" placeholder="Enter your feedback and comment"></textarea>               
+             </fieldset>
+             
+             <button type="submit" target="_blank">submit</button>
+
+        </form>
+    </article>
+    </div>
+        </section>
+
+    </main>
+   
+    <!----------------------------Footer------------------------------------->
+    <footer>
+            
+            <p>Designed and built by June Man</p>
+       
+    </footer>
+
+</body>
+
+
+
+</html>
